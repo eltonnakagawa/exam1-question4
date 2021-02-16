@@ -20,8 +20,8 @@ app.post("/", function(req, res){
   var rad1 = Number(req.body.n1);
 
 // does the computation of the input variables, as numbers
-  var area1 = (Math.PI * rad1) * (Math.PI * rad1);
-  var circ1 = 2 * Math.PI * rad1
+  var area1 = Math.PI * rad1 * rad1;
+  var circ1 = 2 * Math.PI * rad1;
 
 // sends the results back to the web page as string
   res.send("The area of a circle with a raidus of " + rad1 + " is " + area1.toFixed(2) + " and the circumference is " + circ1.toFixed(2));
